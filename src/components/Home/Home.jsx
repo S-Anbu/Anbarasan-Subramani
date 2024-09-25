@@ -12,7 +12,7 @@ const Home = () => {
                             <CoderProfile2 />
                         </div>
                         <div  className='hidden lg:block'>
-                            <span className='text-2xl md:text-5xl lg:text-6xl xl:text-7xl  font-semibold md:block'>Hi, I'm <span className='text-[#0d6efd] '>Anbarasan</span> </span>
+                            <span className='text-2xl md:text-5xl lg:text-6xl xl:text-7xl  font-semibold md:block'>Hi, I'm <span className='text-[#8e0af3] '>Anbarasan</span> </span>
                             <span className='text-2xl md:text-5xl lg:text-6xl xl:text-7xl  font-semibold'>Web Designer &</span> <br />
                             <span className='text-2xl md:text-5xl lg:text-6xl xl:text-7xl  font-semibold'> Developer</span>
                         </div>
