@@ -8,8 +8,6 @@ import {
     IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faInstagram, faWhatsapp, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function NavList() {
     return (
@@ -96,7 +94,7 @@ export function Nav() {
     }, []);
 
     return (
-        <Navbar className="mx-auto max-w-screen-2xl px-6 py-3">
+        <Navbar className="fixed top-0 z-50 mx-auto max-w-screen-2xl  py-3">
             <div className="flex items-center justify-between text-blue-gray-900">
                 <div className="flex items-center justify-between gap-4">
 

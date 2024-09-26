@@ -1,0 +1,3 @@
+const datas = [{image:{},title:'Portfolo',description:"loremExercitation nisi aliquip sunt velit dolore ex dolor exercitation ut."},{image:{},title:'Portfolo',description:"loremExercitation nisi aliquip sunt velit dolore ex dolor exercitation ut."},{image:{},title:'Portfolo',description:"loremExercitation nisi aliquip sunt velit dolore ex dolor exercitation ut."},{image:{},title:'Portfolo',description:"loremExercitation nisi aliquip sunt velit dolore ex dolor exercitation ut."},{image:{},title:'Portfolo',description:"loremExercitation nisi aliquip sunt velit dolore ex dolor exercitation ut."},{image:{},title:'Portfolo',description:"loremExercitation nisi aliquip sunt velit dolore ex dolor exercitation ut."}]
+
+export default datas

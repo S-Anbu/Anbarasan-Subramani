@@ -4,7 +4,7 @@ import CoderProfile2 from './CodeSnippet2';
 const Home = () => {
     return (
         <>
-            <div className='flex items-center justify-center mt-10'>
+            <div className='flex items-center justify-center mt-28'>
 
                 <div className='flex items-center justify-center xl:space-x-10'>
                     <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" className='flex flex-col space-y-8 lg:space-y-10 '>
