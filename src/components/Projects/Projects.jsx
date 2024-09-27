@@ -13,7 +13,7 @@ const Projects = () => {
         <div>
             <div className='text-center py-10'>
             <h1 className="relative text-4xl font-bold inline-block ">
-                PROJECT
+                PROJECTS
                 <span
                     className="absolute left-0 -bottom-1 w-full h-1 bg-[#8e0af3]"
                 ></span>

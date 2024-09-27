@@ -3,6 +3,7 @@ import About from './components/About/About.jsx'
 import Home from './components/Home/Home.jsx'
 import { Nav} from './components/Navbar/Nav'
 import Projects from './components/Projects/Projects.jsx'
+import Skills from './components/Skills/Skills.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Home/>
       <About/>
       <Projects/>
+      <Skills/>
     
     </>
   )
