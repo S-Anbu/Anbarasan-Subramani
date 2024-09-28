@@ -7,8 +7,11 @@ import {
     Avatar,
 } from "@material-tailwind/react";
 import datas from './datas';
+import { Element } from 'react-scroll';
+
 const Projects = () => {
     return (
+        <Element name='Projects'>
         <div>
             <div className="flex justify-center my-5 lg:py-8">
                 <div className="flex  items-center">
@@ -58,6 +61,7 @@ const Projects = () => {
                 ))}
             </div>
         </div>
+        </Element>
     )
 }
 

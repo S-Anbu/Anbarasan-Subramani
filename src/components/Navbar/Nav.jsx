@@ -1,6 +1,7 @@
 import React from "react";
-import logo from './logo.png'
-import { Link } from 'react-router-dom'
+import logo from './logo.png';
+import  {Link} from "react-scroll";
+
 
 import {
     Navbar,
@@ -22,7 +23,7 @@ function NavList() {
                     className="p-1 font-medium"
                 >
                    
-                <Link href="/" className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors"> Home</Link>
+                <a href="#" smooth={true} duration={700} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors"> Home</a>
                 </Typography>
                 <Typography
                     as="li"
@@ -30,9 +31,9 @@ function NavList() {
                     color="blue-gray"
                     className="p-1 font-medium"
                 >
-                    <a href="/#about" className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
+                    <Link to="about" smooth={true} duration={700} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
                         About
-                    </a>
+                    </Link>
                 </Typography>
                 <Typography
                     as="li"
@@ -40,9 +41,9 @@ function NavList() {
                     color="blue-gray"
                     className="p-1 font-medium"
                 >
-                    <a href="/#Projects" className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
+                    <Link to="Projects" smooth={true} duration={700} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
                         Projects
-                    </a>
+                    </Link>
                 </Typography>
                 <Typography
                     as="li"
@@ -50,9 +51,9 @@ function NavList() {
                     color="blue-gray"
                     className="p-1 font-medium"
                 >
-                    <a href="#" className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
+                    <Link to="Skills" smooth={true} duration={700} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
                         Skills
-                    </a>
+                    </Link>
                 </Typography>
                 <Typography
                     as="li"
@@ -60,9 +61,9 @@ function NavList() {
                     color="blue-gray"
                     className="p-1 font-medium"
                 >
-                    <a href="#" className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
+                    <Link to="Contact" smooth={true} duration={700} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
                         Contacts
-                    </a>
+                    </Link>
                 </Typography>
             </ul>
             <div className="social-icons hidden lg:flex items-center space-x-5 ">

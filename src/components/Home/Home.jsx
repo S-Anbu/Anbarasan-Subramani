@@ -1,9 +1,11 @@
 import React from 'react'
 import CoderProfile from './CodeSnippet';
 import CoderProfile2 from './CodeSnippet2';
+import { Element } from 'react-scroll';
 const Home = () => {
     return (
         <>
+        <Element name='Home'>
             <div className='flex items-center justify-center mt-28'>
 
                 <div className='flex items-center justify-center xl:space-x-10'>
@@ -33,6 +35,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            </Element>
         </>
     )
 }
