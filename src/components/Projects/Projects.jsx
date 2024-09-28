@@ -8,17 +8,26 @@ import {
 } from "@material-tailwind/react";
 import datas from './datas';
 const Projects = () => {
-    const project = [{}]
     return (
         <div>
-            <div className='text-center py-10'>
+            <div className="flex justify-center my-5 lg:py-8">
+                <div className="flex  items-center">
+                    <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+                    <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+                        Projects
+                    </span>
+                    <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+                </div>
+            </div>
+
+            {/* <div className='text-center py-10'>
             <h1 className="relative text-4xl font-bold inline-block ">
                 PROJECTS
                 <span
                     className="absolute left-0 -bottom-1 w-full h-1 bg-[#8e0af3]"
                 ></span>
             </h1>
-            </div>
+            </div> */}
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-y-5 mx-auto px-10 md:px-20 lg:px-20 md:gap-x-5 lg:gap-x-3 xl:px-40'>
                 {datas.map((data, index) => (
                     <Card key={index}

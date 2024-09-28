@@ -3,7 +3,7 @@ import React from 'react';
 const CodeSnippet = () => {
     return (
         <>
-        <div className="bg-[#1D1E22] p-6 rounded-lg max-w-sm md:max-w-lg mx-auto  ">
+        <div className="bg-[#1D1E22] p-6 rounded-lg max-w-sm  md:max-w-lg mx-auto  ">
             <div className="flex">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500 mr-2"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-400 mr-2"></div>
@@ -47,7 +47,7 @@ const CodeSnippet = () => {
 
 
         </div>
-            <div className='max-w-sm mt-4'>
+            <div className='max-w-sm mt-4 text-center'>
                 <span className='text-4xl  font-semibold '>Hi, I'm <span className='text-[#0d6efd] '>Anbarasan</span> </span><br />
                 <span className='text-4xl font-semibold'>Web Designer &</span> <br />
                 <span className='text-4xl font-semibold'> Developer</span>
