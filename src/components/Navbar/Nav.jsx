@@ -116,7 +116,7 @@ export function Nav() {
                         as="a"
                         href="#"
                         variant="h6"
-                        className="mr-4 cursor-pointer  py-1.5 hidden md:block"
+                        className="mr-4 cursor-pointer  py-1.5 "
                     >
                         <Link to="Home" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors"> Anbarasan</Link>
                     </Typography>
