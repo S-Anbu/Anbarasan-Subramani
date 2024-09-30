@@ -12,7 +12,7 @@ import { Element } from 'react-scroll';
 const Projects = () => {
     return (
         <Element name='Projects'>
-        <div>
+        <div className='pt-20'>
             <div className="flex justify-center my-5 lg:py-8">
                 <div className="flex  items-center">
                     <span className="w-24 h-[2px] bg-[#1a1443]"></span>
