@@ -11,11 +11,11 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-function NavList() {
+function NavList({setOpenNav}) {
     return (
-        <div className="flex items-center justify-between space-x-10 gap-5">
+        <div className="flex items-center justify-center  sm:justify-between space-x-10 gap-5">
 
-            <ul className="my-2 flex flex-col gap-2  md:mb-0 md:mt-0  md:flex-row  md:items-center  md:gap-6">
+            <ul className="my-2 flex flex-col gap-2  md:mb-0 md:mt-0  md:flex-row  md:items-center  md:gap-6 justify-center">
                 <Typography
                     as="li"
                     variant="small"
@@ -23,7 +23,7 @@ function NavList() {
                     className="p-1 font-medium cursor-pointer"
                 >
 
-                    <Link to="Home" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors"> Home</Link>
+                    <Link to="Home" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}> Home</Link>
                 </Typography>
                 <Typography
                     as="li"
@@ -31,7 +31,7 @@ function NavList() {
                     color="blue-gray"
                     className="p-1 font-medium cursor-pointer"
                 >
-                    <Link to="about" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
+                    <Link to="about" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
                         About
                     </Link>
                 </Typography>
@@ -41,7 +41,7 @@ function NavList() {
                     color="blue-gray"
                     className="p-1 font-medium cursor-pointer"
                 >
-                    <Link to="Projects" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
+                    <Link to="Projects" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
                         Projects
                     </Link>
                 </Typography>
@@ -51,7 +51,7 @@ function NavList() {
                     color="blue-gray"
                     className="p-1 font-medium cursor-pointer"
                 >
-                    <Link to="Skills" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
+                    <Link to="Skills" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
                         Skills
                     </Link>
                 </Typography>
@@ -61,7 +61,7 @@ function NavList() {
                     color="blue-gray"
                     className="p-1 font-medium cursor-pointer"
                 >
-                    <Link to="Contact" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors">
+                    <Link to="Contact" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
                         Contacts
                     </Link>
                 </Typography>
@@ -121,8 +121,8 @@ export function Nav() {
                         <Link to="Home" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors"> Anbarasan</Link>
                     </Typography>
                 </div>
-                <div className="hidden md:block">
-                    <NavList />
+                <div className="hidden md:block ">
+                    <NavList setOpenNav={setOpenNav} />
                 </div>
                 <IconButton
                     variant="text"
@@ -138,7 +138,7 @@ export function Nav() {
                 </IconButton>
             </div>
             <Collapse open={openNav}>
-                <NavList />
+                <NavList setOpenNav={setOpenNav} />
             </Collapse>
         </Navbar>
     );
