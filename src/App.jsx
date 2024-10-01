@@ -12,12 +12,8 @@ function App() {
   return (
     <>
       <Nav />
-      <div id='Home'>
       <Home/>
-      </div>
-      <div >
       <About/>
-      </div>
       <Projects/>
       <Skills/>
       <Contact/>

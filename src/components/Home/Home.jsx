@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 const Home = () => {
     return (
         <>
-            <Element className='pt-5 lg:pt-0' name='Home'>
+            <Element className='pt-5 lg:pt-0' id='Home' name='Home'>
                 <div className='flex items-center justify-center lg:pt-12'>
 
                     <div className='flex items-center justify-center xl:space-x-10'>
