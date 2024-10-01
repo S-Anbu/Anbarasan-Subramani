@@ -11,7 +11,9 @@ function App() {
 
   return (
     <>
+    <div className='fixed min-w-full z-10'>
       <Nav />
+    </div>
       <Home/>
       <About/>
       <Projects/>

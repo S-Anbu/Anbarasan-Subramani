@@ -96,7 +96,7 @@ const Contact = () => {
                             </button>
                         </div>
                     </form>
-                    <div className=" text-xl sm:text-2xl p-6 rounded-lg w-fit " data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000">
+                    <div className=" text-xl sm:text-2xl p-6 rounded-lg w-fit " data-aos="fade-down"  data-aos-delay="50" data-aos-duration="2000">
                         <div className="flex items-center mb-4">
                             <MdEmail className="mr-3 text-2xl" /> {/* Email Icon */}
                             <span className='font-semibold'>anbarasans750@gmail.com</span>
@@ -123,7 +123,6 @@ const Contact = () => {
                                 <img src="https://api.iconify.design/skill-icons:instagram.svg?color=%23888888" width={25} alt="instagram" />
                             </a>
                         </div>
-
                     </div>
                 </div>
             </Element>

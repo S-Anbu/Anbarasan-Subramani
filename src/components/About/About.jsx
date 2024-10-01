@@ -11,7 +11,7 @@ const About = () => {
         </span>
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
-      <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" className="grid grid-cols-1  lg:grid-cols-2 gap-7 md:gap-4 lg:gap-6">
+      <div data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" className="grid grid-cols-1  lg:grid-cols-2 gap-7 md:gap-4 lg:gap-6">
         <div className="order-2 lg:order-1">
           <p className="font-semibold text-3xl mb-5 text-[#8e0af3] uppercase">
             Who I am?
@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex justify-center order-1 lg:order-2">
-            <img src={Anbu} className='w-[280px] h-280px] rounded-lg transition-all duration-1000 shadow-xl shadow-deep-purple-500 hover:scale-110 cursor-pointer' alt="Anbarasan-Subramani" />
+            <img src={Anbu} className='md:w-[280px]  rounded-lg transition-all duration-1000 shadow-xl shadow-deep-purple-500 hover:scale-110 cursor-pointer' alt="Anbarasan-Subramani" />
         </div>
       </div>
     </div>
