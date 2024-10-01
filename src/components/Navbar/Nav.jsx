@@ -23,7 +23,7 @@ function NavList({setOpenNav}) {
                     className="p-1 font-medium cursor-pointer"
                 >
 
-                    <Link to="Home" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}> Home</Link>
+                    <a to="Home" href="#Home" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] active:text-[#8e0af3] focus:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}> Home</a>
                 </Typography>
                 <Typography
                     as="li"
@@ -31,9 +31,9 @@ function NavList({setOpenNav}) {
                     color="blue-gray"
                     className="p-1 font-medium cursor-pointer"
                 >
-                    <Link to="about" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
+                    <a to="about" href="#about" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] active:text-[#8e0af3] focus:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
                         About
-                    </Link>
+                    </a>
                 </Typography>
                 <Typography
                     as="li"
@@ -41,9 +41,9 @@ function NavList({setOpenNav}) {
                     color="blue-gray"
                     className="p-1 font-medium cursor-pointer"
                 >
-                    <Link to="Projects" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
+                    <a to="Projects" href="#Projects" smooth={true} duration={600} className="flex items-center font-semibold active:text-[#8e0af3] focus:text-[#8e0af3] text-black hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
                         Projects
-                    </Link>
+                    </a>
                 </Typography>
                 <Typography
                     as="li"
@@ -51,9 +51,9 @@ function NavList({setOpenNav}) {
                     color="blue-gray"
                     className="p-1 font-medium cursor-pointer"
                 >
-                    <Link to="Skills" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
+                    <a to="Skills" href="#Skills" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] active:text-[#8e0af3] focus:text-[#8e0af3]  transition-colors" onClick={() => setOpenNav(false)}>
                         Skills
-                    </Link>
+                    </a>
                 </Typography>
                 <Typography
                     as="li"
@@ -61,9 +61,9 @@ function NavList({setOpenNav}) {
                     color="blue-gray"
                     className="p-1 font-medium cursor-pointer"
                 >
-                    <Link to="Contact" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
+                    <a to="Contact" href="#Contacts" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] active:text-[#8e0af3] focus:text-[#8e0af3] transition-colors" onClick={() => setOpenNav(false)}>
                         Contacts
-                    </Link>
+                    </a>
                 </Typography>
             </ul>
             <div className="social-icons hidden lg:flex items-center space-x-5 ">
@@ -118,7 +118,7 @@ export function Nav() {
                         variant="h6"
                         className="mr-4 cursor-pointer  py-1.5 "
                     >
-                        <Link to="Home" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors"> Anbarasan</Link>
+                        <Link to="Home" href="#Home" smooth={true} duration={600} className="flex items-center font-semibold hover:text-[#8e0af3] transition-colors"> Anbarasan</Link>
                     </Typography>
                 </div>
                 <div className="hidden md:block ">

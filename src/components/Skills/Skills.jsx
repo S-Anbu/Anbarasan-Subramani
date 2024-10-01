@@ -7,7 +7,7 @@ import { Element } from 'react-scroll';
 
 function Skills() {
   return (
-    <Element className="pt-14" name="Skills">
+    <Element className="pt-14" id='Skills' name="Skills">
     <div id="skills" className="relative  my-12 lg:my-24 " data-aos="fade-down"  data-aos-delay="50" data-aos-duration="2000">
       <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 

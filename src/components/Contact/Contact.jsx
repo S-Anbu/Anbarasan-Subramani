@@ -26,7 +26,7 @@ const Contact = () => {
 
     return (
         <>
-            <Element className='pt-10' name='Contact'>
+            <Element className='pt-10' id='Contacts' name='Contact'>
                 <div className="flex justify-center my-5 lg:py-8">
                     <div className="flex  items-center">
                         <span className="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -98,16 +98,16 @@ const Contact = () => {
                     </form>
                     <div className=" text-xl sm:text-2xl p-6 rounded-lg w-fit " data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000">
                         <div className="flex items-center mb-4">
-                            <MdEmail className="mr-3 text-xl" /> {/* Email Icon */}
-                            <span>anbarasans750@gmail.com</span>
+                            <MdEmail className="mr-3 text-2xl" /> {/* Email Icon */}
+                            <span className='font-semibold'>anbarasans750@gmail.com</span>
                         </div>
                         <div className="flex items-center mb-4">
-                            <MdPhone className="mr-3 text-xl" /> {/* Phone Icon */}
-                            <span>+917502252206</span>
+                            <MdPhone className="mr-3 text-2xl" /> {/* Phone Icon */}
+                            <span className='font-semibold'>  +917502252206</span>
                         </div>
                         <div className="flex items-center">
-                            <MdLocationOn className="mr-3 text-xl" /> {/* Location Icon */}
-                            <span>Puducherry</span>
+                            <MdLocationOn className="mr-3 text-2xl" /> {/* Location Icon */}
+                            <span className='font-semibold' >Puducherry</span>
                         </div>
                         <div  className="mt-4 hidden lg:flex items-center space-x-5 " >
                             <a href="https://www.linkedin.com/in/anbarasan-subramani/" target="_blank">

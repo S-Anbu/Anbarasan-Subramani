@@ -7,12 +7,12 @@ import { Link } from "react-scroll";
 const Home = () => {
     return (
         <>
-            <Element className='' name='Home'>
+            <Element className='pt-5 lg:pt-0' name='Home'>
                 <div className='flex items-center justify-center lg:pt-12'>
 
                     <div className='flex items-center justify-center xl:space-x-10'>
-                        <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" className='flex flex-col space-y-8 lg:space-y-10 '>
-                            <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" className='lg:hidden block lg:mt-10 '>
+                        <div data-aos="fade-down"  data-aos-delay="50" data-aos-duration="1000" className='flex flex-col space-y-8 lg:space-y-10 '>
+                            <div data-aos="fade-down"  data-aos-delay="50" data-aos-duration="1000" className='lg:hidden block lg:mt-10 '>
                                 <CoderProfile2 />
                             </div>
                             <div className='hidden lg:block'>
