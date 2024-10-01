@@ -1,66 +1,46 @@
 import React from 'react'
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    Typography,
-    Avatar,
-} from "@material-tailwind/react";
 import datas from './datas';
 import { Element } from 'react-scroll';
 
 const Projects = () => {
     return (
         <Element id='Projects' name='Projects'>
-        <div className='pt-20'>
-            <div className="flex justify-center my-5 lg:py-8">
-                <div className="flex  items-center">
-                    <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-                    <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-                        Projects
-                    </span>
-                    <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+            <div className='pt-20'>
+                <div className="flex justify-center my-5 lg:py-8">
+                    <div className="flex  items-center">
+                        <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+                        <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+                            Projects
+                        </span>
+                        <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+                    </div>
+                </div>
+
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-y-5 mx-auto px-10 md:px-20 lg:px-20 md:gap-x-5 lg:gap-x-3 xl:px-40'>
+                    {datas.map((data, index) => (
+                        <div key={index} className="relative group h-[20rem] w-full max-w-[20rem] overflow-hidden rounded-lg shadow-lg shadow-blue-gray-900">
+                            {/* Image as background */}
+                            <img
+                                src={data.image}
+                                alt={data.title}
+                                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                            />
+
+                            {/* Title and Description - hidden by default, visible on hover */}
+                            <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <h3 className="text-white text-xl font-bold mb-2"> {data.title} </h3>
+                                <p className="text-white text-sm text-center mb-2 px-4">
+                                    {data.description}
+                                </p>
+                                <a href={data.url} target="_blank" className='p-2 rounded bg-blue-gray-100'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.7rem" height="1.7rem" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    ))}
                 </div>
             </div>
-
-            {/* <div className='text-center py-10'>
-            <h1 className="relative text-4xl font-bold inline-block ">
-                PROJECTS
-                <span
-                    className="absolute left-0 -bottom-1 w-full h-1 bg-[#8e0af3]"
-                ></span>
-            </h1>
-            </div> */}
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-y-5 mx-auto px-10 md:px-20 lg:px-20 md:gap-x-5 lg:gap-x-3 xl:px-40'>
-                {datas.map((data, index) => (
-                    <Card key={index}
-                        shadow={false}
-                        data-aos="zoom-in-up" data-aos-duration="2000"
-                        className="relative grid h-[20rem] w-full max-w-[20rem] items-end justify-center overflow-hidden text-center hover:scale-105 duration-700 ease-in-out transition-transform"
-                    >
-                        <CardHeader
-                            floated={false}
-                            shadow={false}
-                            color="transparent"
-                            className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
-                        >
-                            <img src={data.image} alt="" />
-                            <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-                        </CardHeader>
-                        <CardBody className="relative py-14 px-6 md:px-12">
-                            <Typography
-                                variant="h6"
-                                color="white"
-                                className="mb-6 font-medium leading-[1.5]"
-                            >
-                                {data.description}
-                            </Typography>
-
-                        </CardBody>
-                    </Card>
-                ))}
-            </div>
-        </div>
         </Element>
     )
 }
